@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-red-500 shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
@@ -27,38 +27,38 @@ const Navbar = () => {
                 <svg className="h-8 w-8 text-primary" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-8-2h4v2h-4V4zM5 18V9h14v9H5z"/>
                 </svg>
-                <span className="ml-2 text-xl font-bold text-gray-900">CloudTask</span>
+                <span className="ml-2 text-xl font-bold text-white">CloudTask</span>
               </a>
             </div>
             <nav className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <a 
                 onClick={() => handleNavClick('features')} 
-                className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-transparent hover:border-primary hover:text-primary transition cursor-pointer"
+                className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white border-b-2 border-transparent hover:border-white hover:text-gray-200 transition cursor-pointer"
               >
                 Features
               </a>
               <a 
                 onClick={() => handleNavClick('testimonials')} 
-                className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-primary hover:text-primary transition cursor-pointer"
+                className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white border-b-2 border-transparent hover:border-white hover:text-gray-200 transition cursor-pointer"
               >
                 Testimonials
               </a>
               <a 
                 onClick={() => handleNavClick('pricing')} 
-                className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-primary hover:text-primary transition cursor-pointer"
+                className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white border-b-2 border-transparent hover:border-white hover:text-gray-200 transition cursor-pointer"
               >
                 Pricing
               </a>
               <a 
                 onClick={() => handleNavClick('faq')} 
-                className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-primary hover:text-primary transition cursor-pointer"
+                className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white border-b-2 border-transparent hover:border-white hover:text-gray-200 transition cursor-pointer"
               >
                 FAQ
               </a>
             </nav>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
-            <a href="#" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition">
+            <a href="#" className="inline-flex items-center px-4 py-2 text-sm font-medium text-white hover:text-gray-200 transition">
               Log in
             </a>
             <Button className="ml-3" variant="default">
