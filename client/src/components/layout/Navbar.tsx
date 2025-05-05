@@ -68,7 +68,7 @@ const Navbar = () => {
           <div className="-mr-2 flex items-center sm:hidden">
             <button 
               type="button" 
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" 
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-200 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
               aria-expanded={mobileMenuOpen}
               onClick={toggleMobileMenu}
             >
@@ -89,35 +89,35 @@ const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
         >
-          <div className="pt-2 pb-3 space-y-1">
+          <div className="pt-2 pb-3 space-y-1 bg-red-500">
             <a 
               onClick={() => handleNavClick('features')} 
-              className="block pl-3 pr-4 py-2 border-l-4 border-primary text-base font-medium text-primary-700 bg-primary-50 cursor-pointer"
+              className="block pl-3 pr-4 py-2 border-l-4 border-white text-base font-medium text-white bg-red-600 cursor-pointer"
             >
               Features
             </a>
             <a 
               onClick={() => handleNavClick('testimonials')} 
-              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 cursor-pointer"
+              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-white hover:bg-red-600 hover:border-white hover:text-gray-200 cursor-pointer"
             >
               Testimonials
             </a>
             <a 
               onClick={() => handleNavClick('pricing')} 
-              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 cursor-pointer"
+              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-white hover:bg-red-600 hover:border-white hover:text-gray-200 cursor-pointer"
             >
               Pricing
             </a>
             <a 
               onClick={() => handleNavClick('faq')} 
-              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 cursor-pointer"
+              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-white hover:bg-red-600 hover:border-white hover:text-gray-200 cursor-pointer"
             >
               FAQ
             </a>
           </div>
-          <div className="pt-4 pb-3 border-t border-gray-200">
+          <div className="pt-4 pb-3 border-t border-red-400 bg-red-500">
             <div className="flex items-center px-4 flex-col">
-              <a href="#" className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Log in</a>
+              <a href="#" className="block px-4 py-2 text-base font-medium text-white hover:text-gray-200 hover:bg-red-600">Log in</a>
               <div className="mt-3 w-full">
                 <Button className="w-full" variant="default">Get Started</Button>
               </div>
